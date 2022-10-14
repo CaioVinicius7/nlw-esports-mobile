@@ -1,20 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Background } from "@components/Background";
+import { View } from "react-native";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>NLW Esports</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+	return (
+		<Background>
+			<View></View>
+		</Background>
+	);
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
