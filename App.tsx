@@ -1,9 +1,15 @@
+import { StatusBar, View } from "react-native";
+
 import { Background } from "@components/Background";
-import { View } from "react-native";
 
 export default function App() {
 	return (
 		<Background>
+			<StatusBar
+				barStyle="light-content"
+				backgroundColor="transparent"
+				translucent
+			/>
 			<View></View>
 		</Background>
 	);
