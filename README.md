@@ -50,7 +50,7 @@ Esse é o projeto desenvolvido durante a NLW eSports da [Rocketseat](https://www
 
 ## 🎲 Rodando o projeto
 
-### Antes de tudo é importante clonar o repositório contendo a API utilizada para o backend e rodar o mesmo.
+Antes de tudo é importante clonar o repositório contendo a API utilizada para o backend e rodar o mesmo.
 
 ```bash
 # Clone o repositório do backend
@@ -69,7 +69,7 @@ $ yarn
 $ yarn dev
 ```
 
-### Após concluir os passos descritos acima deixando o backend acessível siga os passos abaixo:
+Após concluir os passos descritos acima deixando o backend acessível siga os passos abaixo:
 
 ```bash
 # Clone este repositório
