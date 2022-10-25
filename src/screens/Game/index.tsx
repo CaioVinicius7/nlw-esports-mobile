@@ -8,6 +8,7 @@ import { THEME } from "@theme/index";
 import { Background } from "@components/Background";
 import { Heading } from "@components/Heading";
 import { DuoCard, DuoCardProps } from "@components/DuoCard";
+import { DuoMatch } from "@components/DuoMatch";
 
 import { styles } from "./styles";
 import { GameParams } from "../../@types/navigation";
@@ -16,6 +17,7 @@ import logo from "../../assets/logo-nlw-esports.png";
 
 export function Game() {
 	const [duos, setDuos] = useState<DuoCardProps[]>([]);
+	const [discordDuoSelected, setDiscordDuoSelected] = useState("caio#1234");
 
 	const route = useRoute();
 	const navigation = useNavigation();
@@ -76,6 +78,12 @@ export function Game() {
 							Não há anúncios publicados ainda.
 						</Text>
 					)}
+				/>
+
+				<DuoMatch
+					discord="caio#1234"
+					visible={discordDuoSelected.length > 0}
+					onClose={() => setDiscordDuoSelected("")}
 				/>
 			</SafeAreaView>
 		</Background>
